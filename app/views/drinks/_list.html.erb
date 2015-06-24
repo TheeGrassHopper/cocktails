@@ -1,16 +1,21 @@
+<!--Go find some code you DID work on, and leave a comment saying what it does.-->
+<!--Then also leave comment on at least one piece of code on how it could be better done or optimized in the future.
 
+the @ is getting the drinks from our data base and each do is a method going through each |drink|
 <div class ="row">
     <% @drinks.each do |drink| %>
     <div class="container-fluid">
-
+<!-- we are using ruby on rails to diplay the pictures of that drink -->
         <div class="col-md-4"><%= drink.picture %></div>
 
         <div class="col-md-8">
+            <!-- we are using ruby on rails to diplay the name of that drink & user email from the data base -->
             <h3><%= drink.name %> | <%= drink.user.email %></h3>
+            <!--same goes for the directions-->
             <p><%= drink.directions %></p>
         </div>
         
     </div>
-
+<!--end is closing the ruby code out-->
    <% end %>
 </div>
